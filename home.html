@@ -1,0 +1,441 @@
+﻿<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary": "#276958", "surface-container-highest": "#e0e3e5", "on-tertiary": "#ffffff", "on-error": "#ffffff", "surface-container-low": "#f2f4f6", "surface-container": "#eceef0", "error-container": "#ffdad6", "primary-container": "#131b2e", "tertiary-fixed-dim": "#fab983", "tertiary-fixed": "#ffdcc2", "on-surface-variant": "#45464d", "on-primary-fixed-variant": "#3f465c", "tertiary-container": "#2e1500", "on-secondary": "#ffffff", "surface-variant": "#e0e3e5", "surface-dim": "#d8dadc", "background": "#f7f9fb", "on-secondary-fixed-variant": "#035141", "secondary-fixed-dim": "#92d3bf", "inverse-surface": "#2d3133", "primary-fixed-dim": "#bec6e0", "outline": "#76777d", "primary": "#000000", "inverse-primary": "#bec6e0", "on-primary": "#ffffff", "on-tertiary-fixed-variant": "#683c11", "outline-variant": "#c6c6cd", "on-tertiary-container": "#af7847", "on-primary-fixed": "#131b2e", "surface-tint": "#565e74", "on-error-container": "#93000a", "surface-bright": "#f7f9fb", "primary-fixed": "#dae2fd", "tertiary": "#000000", "on-secondary-container": "#2e6f5e", "surface-container-high": "#e6e8ea", "on-background": "#191c1e", "on-secondary-fixed": "#002019", "surface": "#f7f9fb", "error": "#ba1a1a", "secondary-container": "#aef0da", "on-tertiary-fixed": "#2e1500", "inverse-on-surface": "#eff1f3", "on-surface": "#191c1e", "surface-container-lowest": "#ffffff", "on-primary-container": "#7c839b", "secondary-fixed": "#aef0da" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-md": "1.5rem", "space-xl": "2.5rem", "space-md": "1rem", "margin-md": "2rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter-lg": "2rem", "margin-lg": "3.5rem", "gutter": "1rem", "margin": "1rem", "space-sm": "0.5rem" }, fontFamily: { "display-hero": ["Plus Jakarta Sans"], "label-lg": ["Manrope"], "headline-lg": ["Plus Jakarta Sans"], "label-md": ["Manrope"], "label-caps": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "title-md": ["Manrope"], "display-hero-mobile": ["Plus Jakarta Sans"], "body-lg": ["Manrope"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["Manrope"], "body-sm": ["Manrope"], "headline-lg-mobile": ["Plus Jakarta Sans"] }, fontSize: { "display-hero": ["48px", { lineHeight: "56px", letterSpacing: "-0.03em", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "600" }], "headline-lg": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "600" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "600" }], "label-caps": ["11px", { lineHeight: "14px", letterSpacing: "0.1em", fontWeight: "700" }], "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "600" }], "title-md": ["16px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "600" }], "display-hero-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "600" }], "body-lg": ["16px", { lineHeight: "26px", letterSpacing: "0em", fontWeight: "400" }], "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "-0.005em", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "22px", letterSpacing: "0em", fontWeight: "400" }], "body-sm": ["12px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "400" }], "headline-lg-mobile": ["26px", { lineHeight: "34px", letterSpacing: "-0.015em", fontWeight: "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="Sutura Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDBxmdiqQLGpqWSIw8Llz3133iYWXgyPobWitCCwzTCscOVNb48JD2xVFVJAub_PTaz2vSzofqQgnoGhuggxIRUC-ifWF_6OdQ1rhqfcgbnsa4cfVFOGccBfGyqxdvZto73uQAknmwbOjBXCaqfK5s3Y9kg_lgPC01nt4QAdnfGbY1VeqfA_rlk41UaxD8a05TUa0xpqrbLNbwc8qZE6vgr3cLDyzQ7zk9jK-bWwrWX"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface font-bold">SUTURA</span><span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider">Atelier Medical</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Search" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Shopping Bag" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="shopping-bag-badge absolute top-2 left-2 min-w-[18px] h-[18px] px-1 bg-secondary text-on-secondary font-label-caps text-[10px] leading-tight rounded-full flex items-center justify-center font-bold">0</span></button><div class="pr-space-xs flex items-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-high" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbpNgLToKuuRzc-0kvt9qoWsvkmTvtryerlh1tr7UuJl2sNzOEsmdHLggMxqt3wu7d6eDdMMr-XwQpIN-jZmAcOKFzz4ektXSzk9Mga31Y_vH3dXtlao0x74Zep89Ob61gYfGSqrQYnHwe5eraFiRuFmqYYLQm7wzvPPUj2HC-KDVftcbgJzr3-koSZtQ_DEQaL6QK5Bjp5aYeHw32iQPqn_udtQ1aNmtbkJ3E5yk"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- Micro Announcement Ticker -->
+<div class="w-full bg-secondary text-on-secondary px-gutter py-2 flex items-center justify-between shadow-sm overflow-hidden">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-[16px] shrink-0 text-secondary-fixed">local_shipping</span>
+<span class="font-label-md text-label-md truncate">شحن مجاني للطلبات فوق 250 ريال | راحة فائقة لمناوباتك الطويلة</span>
+</div>
+<span class="font-label-caps text-label-caps text-secondary-fixed bg-on-secondary-fixed-variant/40 px-2 py-0.5 rounded-full shrink-0">حصري</span>
+</div>
+<div class="px-gutter flex flex-col gap-space-lg mt-space-md">
+<!-- Hero Editorial Card -->
+<div class="relative w-full rounded-xl overflow-hidden bg-primary-container text-on-primary shadow-md">
+<div class="w-full h-80 bg-cover bg-center relative" data-alt="Editorial portrait of two confident medical doctors wearing tailored navy blue and eucalyptus sage medical scrubs, standing gracefully in a minimalist modern sunlit surgical clinic, luxury medical wear aesthetic, clean warm lighting, high-end catalog photography, 8k resolution" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPRHZ1ZUd9y29ECCP4J6_Y1dPGohRaQzzxyhI2DgUDSvjGG8kN4lOCEKpOqXe7jfspRTLlvGJRALTzqhItZDDvYmCu4GWpt6av922LjZkIuQQwgw0piipwxrtNMwFyeOv2RmNzDYbQm4wTrgvid6RWITmqvMy_Wg3dreNUc6zQN0uzWnZA_75CiewFWhTx6Nvz7FRPUSkVMUq7bjGMoUslGPPBC6aRN7-0P4owYzg')">
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container via-primary-container/40 to-transparent"></div>
+<div class="absolute top-space-md right-space-md">
+<span class="inline-flex items-center gap-1 font-label-caps text-label-caps px-2.5 py-1 rounded-full bg-surface-container-lowest/90 text-secondary shadow-sm backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            تشكيلة AeroFlex Pro
+          </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs relative -mt-12 bg-gradient-to-b from-transparent to-primary-container">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold tracking-tight text-on-primary">
+          أناقة تليق بعطائك الطبي
+        </h1>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+          سكرابات مصممة بأعلى معايير المرونة المتطورة ومقاومة السوائل والبكتيريا لأداء يومي فائق.
+        </p>
+<div class="flex items-center gap-space-sm mt-space-sm pt-space-xs">
+<button class="flex-1 bg-surface-container-lowest text-primary py-3 px-space-md rounded-lg font-label-lg text-label-lg shadow-sm active:scale-[0.98] transition-all flex items-center justify-center gap-1.5" type="button">
+<span onclick="window.location.href='catalog.html'" class="cursor-pointer">تسوق التشكيلة</span>
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+</button>
+<button class="px-space-md py-3 rounded-lg bg-surface-container-high/20 text-on-primary font-label-lg text-label-lg backdrop-blur-sm hover:bg-surface-container-high/30 transition-colors" type="button">
+            اكتشف الأقمشة
+          </button>
+</div>
+</div>
+</div>
+<!-- Fast Category Chips (Pills) -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">تصفح الفئات</span>
+<button class="font-label-md text-label-md text-secondary" type="button">عرض الكل</button>
+</div>
+<div class="flex items-center gap-space-xs overflow-x-auto pb-2 -mx-gutter px-gutter no-scrollbar" id="categoryChipGroup">
+<button class="category-chip shrink-0 px-4 py-2 rounded-full font-label-md text-label-md transition-all bg-primary text-on-primary shadow-sm" data-category="all" type="button">
+          الكل
+        </button>
+<button class="category-chip shrink-0 px-4 py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container" data-category="women" type="button">
+          نسائي
+        </button>
+<button class="category-chip shrink-0 px-4 py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container" data-category="men" type="button">
+          رجالي
+        </button>
+<button class="category-chip shrink-0 px-4 py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container" data-category="coats" type="button">
+          معاطف طبية Lab Coats
+        </button>
+<button class="category-chip shrink-0 px-4 py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container" data-category="caps" type="button">
+          إكسسوارات وسكراب كاب
+        </button>
+</div>
+</div>
+<!-- Key Medical Tech Innovation Highlights -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block">هندسة الأقمشة السريرية</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">معايير Sutura التقنية</h2>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+</div>
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Tech 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">all_inclusive</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-title-md text-title-md text-on-surface">مرونة فائقة 360°</h3>
+<span class="font-label-caps text-label-caps bg-surface-container-low px-2 py-0.5 rounded text-secondary">AeroFlex™</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              نسيج ميكانيكي متمدد في 4 اتجاهات يتيح حرية حركة تامة أثناء العمليات الجراحية المعقدة دون أي انكماش.
+            </p>
+</div>
+</div>
+<!-- Tech 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">shield_with_heart</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-title-md text-title-md text-on-surface">درع السوائل وجزيئات الفضة</h3>
+<span class="font-label-caps text-label-caps bg-surface-container-low px-2 py-0.5 rounded text-secondary">SILVER-ION</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              حماية فعالة بنسبة 99.9% ضد البكتيريا ومقاومة فائقة للسوائل المنسكبة، مع الحفاظ على النعومة الفائقة.
+            </p>
+</div>
+</div>
+<!-- Tech 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">air</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-title-md text-title-md text-on-surface">نظام تهوية متدفق 14+ ساعة</h3>
+<span class="font-label-caps text-label-caps bg-surface-container-low px-2 py-0.5 rounded text-secondary">DRY-BREATHE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              مسامات مجهرية تنظم حرارة الجسم وتطرد الرطوبة الساخنة لتحافظ على جفافك وانتعاشك في أطول المناوبات.
+            </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Featured Best-Sellers (Product Cards) -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block">الأكثر طلباً بالمملكة</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">المختارات الجراحية المفضلة</h2>
+</div>
+<button class="font-label-md text-label-md text-secondary flex items-center gap-0.5" type="button">
+<span>المزيد</span>
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+</div>
+<div class="grid grid-cols-1 gap-space-md">
+<!-- Product 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col transition-all hover:shadow-md">
+<div class="relative w-full h-64 bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Premium navy blue medical scrub top folded gracefully on sterile white marble with surgical stethoscope beside it, high end studio product photography, clean natural studio lighting, minimalist luxury medical fashion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkN71PzxfLwvGORaLZcqJnGZ9-BCOTFtuLpKx26RpezOdSRus-PJw7P_xXPW6MNl6Vq91Jywj6Bt3eqZtOYY5GsQOH67o6PlD9Ex4RhqsfEgcRyLfJw1krXQmjEwts3HtRpPUTf4jU7l96BuDq1850FRFC46DPTsXbBcn79wG24_xK01IlQNJhEuiA0lDCQS2BdGPDsZCJqikFLEDuWRyB283UzQUT_pX8qKM18Zw"/>
+<button aria-label="أضف للمفضلة" class="absolute top-3 left-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-error transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute bottom-3 right-3 bg-primary/80 backdrop-blur-md text-on-primary px-2 py-1 rounded-md text-label-caps font-label-caps flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary-fixed">star</span>
+<span>4.9 (320 تقييم)</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary">AEROFLEX PRO SERIES</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">289 ر.س</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">سكراب قميص AeroFlex V-Neck</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">كحلي ملكي عميق • 6 جيوب وظيفية مع حامل سماعة</p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-4 h-4 rounded-full bg-[#131b2e] ring-2 ring-primary"></span>
+<span class="w-4 h-4 rounded-full bg-[#276958]"></span>
+<span class="w-4 h-4 rounded-full bg-[#2d3133]"></span>
+</div>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-lg font-label-md text-label-md flex items-center gap-1 hover:bg-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">keyboard_double_arrow_left</span>
+<span>إضافة للسلة</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col transition-all hover:shadow-md">
+<div class="relative w-full h-64 bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Tailored eucalyptus sage green scrub pants slim jogger fit placed on clean aesthetic background, modern textile tailoring, pockets and zippers visible, high fashion medical apparel photoshoot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWmwgBaYzFQjk987b4mAZWMBvfhziZUCW8IHHqkZRwznWzDxRVKa025WZM4yjK-bwWXKqXwOYEtG1b0y3wRhQfOOZqXsywds7AHCWJdU10U5rR7N7RXEKbXvi2nHRKcLTE_5yvIXXnhokJqgJzXMF2W_zniqiH4wGIeklaG-sBP2F_mkcUXbFgwwg4DZ1N0yJMrvs8mCL5V9ysiC2Lvhw1aJqcY5Y5tYhDCSjtwJM"/>
+<button aria-label="أضف للمفضلة" class="absolute top-3 left-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-error transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute bottom-3 right-3 bg-primary/80 backdrop-blur-md text-on-primary px-2 py-1 rounded-md text-label-caps font-label-caps flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary-fixed">star</span>
+<span>4.8 (184 تقييم)</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary">ERGONOMIC FIT</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">245 ر.س</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">بنطال سكراب Slim Jogger</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">أخضر مريمي ساج • خصر مطاطي داعم وجيب هاتف مخفي</p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-4 h-4 rounded-full bg-[#276958] ring-2 ring-secondary"></span>
+<span class="w-4 h-4 rounded-full bg-[#131b2e]"></span>
+<span class="w-4 h-4 rounded-full bg-[#76777d]"></span>
+</div>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-lg font-label-md text-label-md flex items-center gap-1 hover:bg-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">keyboard_double_arrow_left</span>
+<span>إضافة للسلة</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col transition-all hover:shadow-md">
+<div class="relative w-full h-64 bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Pristine white luxury executive lab coat with elegant notched lapels hung on tailored wooden hanger against architectural soft grey concrete wall, crisp clinical elegance, medical apparel editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWsa7U8cba2Y-rjKdzkg-9SywmBKboxMzH9AtB0SpWpGV1GNK9ArkA4s6urzfSQ7Y4EhKKt2o0CTyqHO1-Z9jbpcQvl_pZIwMBfa9osiVgT6SH6wGNeaAtqzViyuhb1pBpTpuv_S4vdnt1CXygsWI0WmRyxOd8HDzc4OpQUkaCZJqr216ilY07e2-RQhEFq-x89lyobwFCTBu0naol_QcETpFJoTMwViMr-dyc4qk"/>
+<button aria-label="أضف للمفضلة" class="absolute top-3 left-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-error transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute bottom-3 right-3 bg-primary/80 backdrop-blur-md text-on-primary px-2 py-1 rounded-md text-label-caps font-label-caps flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary-fixed">star</span>
+<span>5.0 (98 تقييم)</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary">CONSULTANT SERIES</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">320 ر.س</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">لاب كوت استشاري Executive Lab Coat</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">أبيض ناصع مضاد للبقع • أزرار كلاسيكية مخفية وقماش مقاوم للتجعد</p>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-4 h-4 rounded-full bg-surface-container-lowest ring-2 ring-primary"></span>
+</div>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-lg font-label-md text-label-md flex items-center gap-1 hover:bg-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">keyboard_double_arrow_left</span>
+<span>إضافة للسلة</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Custom Medical Embroidery Service Banner -->
+<div class="relative rounded-xl overflow-hidden bg-surface-container-highest shadow-sm p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">draw</span>
+<span class="font-label-caps text-label-caps text-secondary tracking-wider">أتيليه سوتورا الخاص</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">خدمة التطريز الطبي الرقمي المخصص</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          وثّق هويتك المهنية الرفيعة. نوفر تطريز اسمك، تخصصك، وشعار مستشفاك بدقة ليزر متناهية وخيوط حريرية مقاومة للتعقيم المتكرر.
+        </p>
+</div>
+<!-- Live Interactive Visualizer Preview -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg flex flex-col gap-space-sm shadow-inner">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline">معاينة مباشرة للتطريز الصدري</span>
+<div class="flex items-center gap-1">
+<button class="w-5 h-5 rounded-full bg-surface-container-lowest ring-1 ring-outline text-[10px] flex items-center justify-center font-bold text-on-surface" title="أبيض" type="button"></button>
+<button class="w-5 h-5 rounded-full bg-secondary text-[10px] flex items-center justify-center font-bold text-on-secondary" title="ساج" type="button"></button>
+<button class="w-5 h-5 rounded-full bg-tertiary-fixed-dim text-[10px] flex items-center justify-center font-bold text-primary" title="نحاسي" type="button"></button>
+</div>
+</div>
+<div class="bg-primary-container p-space-md rounded flex items-center justify-between text-on-primary">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-[26px]">local_hospital</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold tracking-wide text-on-primary">د. سارة المنصور</span>
+<span class="font-label-caps text-label-caps text-secondary-fixed">استشارية جراحة دقيقة</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-primary-container text-[20px]">verified_user</span>
+</div>
+</div>
+<button class="w-full bg-secondary text-on-secondary py-3 rounded-lg font-label-lg text-label-lg shadow-sm hover:bg-secondary/90 transition-colors flex items-center justify-center gap-2" type="button">
+<span>طلب تطريز مخصص مع طلبك</span>
+<span class="material-symbols-outlined text-[18px]">auto_fix_high</span>
+</button>
+</div>
+<!-- Verified Medical Reviews / Testimonials -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block">آراء الكوادر الطبية</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">موثوق من أطباء المملكة</h2>
+</div>
+<div class="flex items-center gap-0.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-title-md text-title-md font-bold">4.92</span>
+</div>
+</div>
+<!-- Testimonial Cards Carousel / Stack -->
+<div class="flex flex-col gap-space-sm">
+<!-- Review 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-title-md">
+                ف
+              </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold text-on-surface">د. فيصل العتيبي</span>
+<span class="font-label-caps text-label-caps text-outline">جراحة عامة • مستشفى الملك فيصل التخصصي</span>
+</div>
+</div>
+<div class="flex text-secondary text-[16px]">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mt-1">
+            "جربت الكثير من الماركات العالمية، لكن خامة AeroFlex من سوتورا فاقت كل التوقعات. مرونة مدهشة أثناء ساعات العمليات الطويلة، والأجمل مقاومة السوائل الحقيقية دون أن تشعر بحرارة القماش."
+          </p>
+</div>
+<!-- Review 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-title-md">
+                ن
+              </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold text-on-surface">د. نورة الشمري</span>
+<span class="font-label-caps text-label-caps text-outline">أخصائية طب الطوارئ • الرياض</span>
+</div>
+</div>
+<div class="flex text-secondary text-[16px]">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mt-1">
+            "مناوبات الطوارئ تتطلب حركة سريعة وتحمل عالي. سكراب Slim Jogger خفيف ومرن بشكل لا يصدق، وخدمة التطريز للاسم وشعار التخصص زادت من فخامته وأناقته."
+          </p>
+</div>
+</div>
+</div>
+<!-- Assurance Badges Grid -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-around gap-2 text-center">
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">ضمان الراحة</span>
+<span class="font-label-caps text-label-caps text-outline">استبدال مجاني 30 يوم</span>
+</div>
+<div class="w-px h-10 bg-outline-variant"></div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[24px]">science</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">مختبر طبياً</span>
+<span class="font-label-caps text-label-caps text-outline">مضاد للميكروبات</span>
+</div>
+<div class="w-px h-10 bg-outline-variant"></div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[24px]">local_shipping</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">توصيل سريع</span>
+<span class="font-label-caps text-label-caps text-outline">لكافة مدن المملكة</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Quick Category Chip Toggle Interaction
+    const chips = document.querySelectorAll('#categoryChipGroup .category-chip');
+    chips.forEach(chip => {
+      chip.addEventListener('click', function() {
+        chips.forEach(c => {
+          c.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+          c.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+        });
+        this.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+        this.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+      });
+    });
+
+    // Add to Bag Micro-feedback
+    const addBtns = document.querySelectorAll('button:has(.material-symbols-outlined:contains("add_shopping_bag"))');
+    addBtns.forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const originalText = this.innerHTML;
+        this.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span><span>تمت الإضافة</span>';
+        this.classList.remove('bg-primary');
+        this.classList.add('bg-secondary');
+        setTimeout(() => {
+          this.innerHTML = originalText;
+          this.classList.remove('bg-secondary');
+          this.classList.add('bg-primary');
+        }, 1500);
+      });
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-secondary font-semibold"><div class="flex justify-around items-center h-16 px-space-sm"><a aria-current="page" class="flex flex-col items-center justify-center gap-1 w-16 h-12 transition-colors text-secondary font-semibold" data-path="home" href="home.html"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-md text-label-md">الرئيسية</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="catalog" href="catalog.html"><span class="material-symbols-outlined text-[22px]">drive_image</span><span class="font-label-md text-label-md">المتجر</span></a><a class="flex flex-col items-center justify-center gap-1 w-20 h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="fabric-tech-story" href="fabric-tech.html"><span class="material-symbols-outlined text-[22px]">biotech</span><span class="font-label-md text-label-md text-center line-clamp-1">تقنية القماش</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="profile" href="desktop.html"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-md text-label-md">حسابي</span></a></div></nav><script type="module">
+  import { initCartBadge, addToCart } from './cart.js';
+  import { analytics } from './firebase.js';
+
+  document.addEventListener('DOMContentLoaded', async () => {
+    await initCartBadge();
+
+    // Hook up all "إضافة للسلة" buttons
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach(btn => {
+      if (btn.innerText && btn.innerText.includes('إضافة للسلة')) {
+        btn.addEventListener('click', async (e) => {
+          e.preventDefault();
+          const card = btn.closest('.bg-surface-container-lowest') || btn.parentElement;
+          const title = card ? card.querySelector('h3, h4')?.innerText?.trim() : 'طقم سكراب طبي';
+          const price = card ? card.querySelector('.font-headline-sm')?.innerText?.trim() : '289 ر.س';
+
+          const originalHTML = btn.innerHTML;
+          btn.disabled = true;
+          btn.innerHTML = '<span class="material-symbols-outlined text-[16px] animate-spin">progress_activity</span><span>جاري الإضافة...</span>';
+
+          const ok = await addToCart({
+            id: 'scrub_' + Math.floor(Math.random() * 1000),
+            name: title || 'سكراب طبي فاخر',
+            price: price || '289 ر.س',
+            color: 'كحلي',
+            size: 'M',
+            qty: 1
+          });
+
+          if (ok) {
+            btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check_circle</span><span>تمت الإضافة بنجاح</span>';
+            btn.classList.add('bg-secondary');
+            setTimeout(() => {
+              btn.innerHTML = originalHTML;
+              btn.classList.remove('bg-secondary');
+              btn.disabled = false;
+            }, 1800);
+          } else {
+            btn.innerHTML = originalHTML;
+            btn.disabled = false;
+          }
+        });
+      }
+    });
+  });
+</script>
+</body></html>
